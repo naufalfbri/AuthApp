@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\MSI\\source\\repos\\Auth\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{334F3B23-EFE8-6F1A-5E5F-9A2275D56E28}|Auth\\Auth.csproj|c:\\users\\msi\\source\\repos\\auth\\auth\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{334F3B23-EFE8-6F1A-5E5F-9A2275D56E28}|Auth\\Auth.csproj|solutionrelative:auth\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{334F3B23-EFE8-6F1A-5E5F-9A2275D56E28}|Auth\\Auth.csproj|c:\\users\\msi\\source\\repos\\auth\\auth\\forms\\siswaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{334F3B23-EFE8-6F1A-5E5F-9A2275D56E28}|Auth\\Auth.csproj|solutionrelative:auth\\forms\\siswaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{334F3B23-EFE8-6F1A-5E5F-9A2275D56E28}|Auth\\Auth.csproj|c:\\users\\msi\\source\\repos\\auth\\auth\\forms\\siswaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{334F3B23-EFE8-6F1A-5E5F-9A2275D56E28}|Auth\\Auth.csproj|solutionrelative:auth\\forms\\siswaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{334F3B23-EFE8-6F1A-5E5F-9A2275D56E28}|Auth\\Auth.csproj|c:\\users\\msi\\source\\repos\\auth\\auth\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{334F3B23-EFE8-6F1A-5E5F-9A2275D56E28}|Auth\\Auth.csproj|solutionrelative:auth\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{334F3B23-EFE8-6F1A-5E5F-9A2275D56E28}|Auth\\Auth.csproj|C:\\Users\\MSI\\source\\repos\\Auth\\auth\\forms\\siswaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{334F3B23-EFE8-6F1A-5E5F-9A2275D56E28}|Auth\\Auth.csproj|solutionrelative:auth\\forms\\siswaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{334F3B23-EFE8-6F1A-5E5F-9A2275D56E28}|Auth\\Auth.csproj|C:\\Users\\MSI\\source\\repos\\Auth\\auth\\forms\\guruform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -42,30 +42,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\Auth\\Auth\\Program.cs",
-              "RelativeDocumentMoniker": "Auth\\Program.cs",
-              "ToolTip": "C:\\Users\\MSI\\source\\repos\\Auth\\Auth\\Program.cs",
-              "RelativeToolTip": "Auth\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
+              "Title": "SiswaForm.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\Auth\\Auth\\Forms\\SiswaForm.cs",
+              "RelativeDocumentMoniker": "Auth\\Forms\\SiswaForm.cs",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\Auth\\Auth\\Forms\\SiswaForm.cs*",
+              "RelativeToolTip": "Auth\\Forms\\SiswaForm.cs*",
+              "ViewState": "AgIAABEAAAAAAAAAAIA8wCIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-02T23:20:53.085Z"
+              "WhenOpened": "2026-11-03T00:39:39.278Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "SiswaForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\Auth\\Auth\\Forms\\SiswaForm.cs",
               "RelativeDocumentMoniker": "Auth\\Forms\\SiswaForm.cs",
-              "ToolTip": "C:\\Users\\MSI\\source\\repos\\Auth\\Auth\\Forms\\SiswaForm.cs [Design]",
-              "RelativeToolTip": "Auth\\Forms\\SiswaForm.cs [Design]",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\Auth\\Auth\\Forms\\SiswaForm.cs [Design]*",
+              "RelativeToolTip": "Auth\\Forms\\SiswaForm.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-02T23:26:08.536Z"
+              "WhenOpened": "2026-11-02T23:26:08.536Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -91,15 +93,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LoginForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\Auth\\Auth\\Forms\\LoginForm.cs",
-              "RelativeDocumentMoniker": "Auth\\Forms\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\MSI\\source\\repos\\Auth\\Auth\\Forms\\LoginForm.cs [Design]",
-              "RelativeToolTip": "Auth\\Forms\\LoginForm.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\Auth\\Auth\\Program.cs",
+              "RelativeDocumentMoniker": "Auth\\Program.cs",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\Auth\\Auth\\Program.cs",
+              "RelativeToolTip": "Auth\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-02T23:25:18.128Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-11-02T23:20:53.085Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

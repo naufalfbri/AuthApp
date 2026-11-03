@@ -7,9 +7,6 @@
     <Compile Update="Forms\GuruForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\LoginForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Forms\SiswaForm.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -1,6 +1,5 @@
 C:\Users\MSI\source\repos\Auth\Auth\obj\Debug\net10.0-windows\Auth.Forms.AdminForm.resources
 C:\Users\MSI\source\repos\Auth\Auth\obj\Debug\net10.0-windows\Auth.Forms.GuruForm.resources
-C:\Users\MSI\source\repos\Auth\Auth\obj\Debug\net10.0-windows\Auth.Forms.LoginForm.resources
 C:\Users\MSI\source\repos\Auth\Auth\obj\Debug\net10.0-windows\Auth.Forms.SiswaForm.resources
 C:\Users\MSI\source\repos\Auth\Auth\obj\Debug\net10.0-windows\Auth.Models.User.resources
 C:\Users\MSI\source\repos\Auth\Auth\obj\Debug\net10.0-windows\Auth.Services.AuthorizationService.resources
@@ -22,3 +21,8 @@ C:\Users\MSI\source\repos\Auth\Auth\obj\Debug\net10.0-windows\Auth.genruntimecon
 C:\Users\MSI\source\repos\Auth\Auth\obj\Debug\net10.0-windows\ref\Auth.dll
 C:\Users\MSI\source\repos\Auth\Auth\obj\Debug\net10.0-windows\Auth.csproj.Up2Date
 C:\Users\MSI\source\repos\Auth\Auth\obj\Debug\net10.0-windows\Auth.sourcelink.json
+C:\Users\MSI\source\repos\Auth\Auth\bin\Debug\net10.0-windows\Guna.UI2.dll
+C:\Users\MSI\source\repos\Auth\Auth\bin\Debug\net10.0-windows\System.Management.dll
+C:\Users\MSI\source\repos\Auth\Auth\bin\Debug\net10.0-windows\runtimes\win\lib\net7.0\System.Management.dll
+C:\Users\MSI\source\repos\Auth\Auth\obj\Debug\net10.0-windows\Auth.csproj.AssemblyReference.cache
+C:\Users\MSI\source\repos\Auth\Auth\obj\Debug\net10.0-windows\Auth.Properties.Resources.resources
