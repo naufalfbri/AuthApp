@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "CkT+C0RqQ8o=",
+  "dgSpecHash": "6FxIx9QZo0U=",
   "success": true,
-  "projectFilePath": "C:\\Users\\MSI\\source\\repos\\Auth\\Auth\\Auth.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\Auth\\Auth.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\MSI\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.8\\guna.ui2.winforms.2.0.4.8.nupkg.sha512",
-    "C:\\Users\\MSI\\.nuget\\packages\\system.management\\7.0.0\\system.management.7.0.0.nupkg.sha512"
+    "C:\\Users\\Lenovo\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.8\\guna.ui2.winforms.2.0.4.8.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\system.management\\7.0.0\\system.management.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }
