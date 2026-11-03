@@ -28,12 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "LoginForm";
+            button1 = new Button();
+            button2 = new Button();
+            SuspendLayout();
+            // 
+            // button1
+            // 
+            button1.Location = new Point(214, 119);
+            button1.Margin = new Padding(2, 2, 2, 2);
+            button1.Name = "button1";
+            button1.Size = new Size(78, 20);
+            button1.TabIndex = 0;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(335, 102);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 23);
+            button2.TabIndex = 1;
+            button2.Text = "button2";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // LoginForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(560, 270);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Margin = new Padding(2, 2, 2, 2);
+            Name = "LoginForm";
+            Text = "LoginForm";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button button1;
+        private Button button2;
     }
 }
