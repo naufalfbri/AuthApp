@@ -44,6 +44,7 @@
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            label1 = new Label();
             guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             btnButton = new Guna.UI2.WinForms.Guna2Button();
@@ -51,7 +52,6 @@
             guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            label1 = new Label();
             guna2GradientPanel1.SuspendLayout();
             guna2CustomGradientPanel1.SuspendLayout();
             SuspendLayout();
@@ -82,7 +82,7 @@
             guna2HtmlLabel1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2HtmlLabel1.Location = new Point(107, 21);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(77, 34);
+            guna2HtmlLabel1.Size = new Size(52, 23);
             guna2HtmlLabel1.TabIndex = 0;
             guna2HtmlLabel1.Text = "LOGIN";
             // 
@@ -93,13 +93,15 @@
             guna2GradientPanel1.CustomizableEdges = customizableEdges11;
             guna2GradientPanel1.Dock = DockStyle.Fill;
             guna2GradientPanel1.Location = new Point(0, 0);
+            guna2GradientPanel1.Margin = new Padding(2);
             guna2GradientPanel1.Name = "guna2GradientPanel1";
             guna2GradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            guna2GradientPanel1.Size = new Size(800, 450);
+            guna2GradientPanel1.Size = new Size(1264, 681);
             guna2GradientPanel1.TabIndex = 0;
             // 
             // guna2CustomGradientPanel1
             // 
+            guna2CustomGradientPanel1.Anchor = AnchorStyles.None;
             guna2CustomGradientPanel1.BackColor = Color.White;
             guna2CustomGradientPanel1.BorderColor = Color.FromArgb(64, 0, 0);
             guna2CustomGradientPanel1.BorderRadius = 10;
@@ -113,20 +115,33 @@
             guna2CustomGradientPanel1.Controls.Add(guna2HtmlLabel3);
             guna2CustomGradientPanel1.Controls.Add(guna2HtmlLabel2);
             guna2CustomGradientPanel1.CustomizableEdges = customizableEdges9;
-            guna2CustomGradientPanel1.Location = new Point(232, 74);
+            guna2CustomGradientPanel1.Location = new Point(162, 44);
+            guna2CustomGradientPanel1.Margin = new Padding(2);
             guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            guna2CustomGradientPanel1.Size = new Size(300, 300);
+            guna2CustomGradientPanel1.Size = new Size(210, 180);
             guna2CustomGradientPanel1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(16, 123);
+            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(131, 15);
+            label1.TabIndex = 7;
+            label1.Text = "Don't have an account?";
+            label1.Click += label1_Click;
             // 
             // guna2HtmlLabel5
             // 
             guna2HtmlLabel5.BackColor = Color.Transparent;
             guna2HtmlLabel5.Font = new Font("Segoe UI", 10F);
             guna2HtmlLabel5.ForeColor = Color.Silver;
-            guna2HtmlLabel5.Location = new Point(35, 162);
+            guna2HtmlLabel5.Location = new Point(24, 97);
+            guna2HtmlLabel5.Margin = new Padding(2);
             guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            guna2HtmlLabel5.Size = new Size(85, 30);
+            guna2HtmlLabel5.Size = new Size(59, 19);
             guna2HtmlLabel5.TabIndex = 6;
             guna2HtmlLabel5.Text = "Password";
             guna2HtmlLabel5.Click += guna2HtmlLabel5_Click;
@@ -136,9 +151,10 @@
             guna2HtmlLabel4.BackColor = Color.Transparent;
             guna2HtmlLabel4.Font = new Font("Segoe UI", 10F);
             guna2HtmlLabel4.ForeColor = Color.Silver;
-            guna2HtmlLabel4.Location = new Point(35, 113);
+            guna2HtmlLabel4.Location = new Point(24, 68);
+            guna2HtmlLabel4.Margin = new Padding(2);
             guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            guna2HtmlLabel4.Size = new Size(90, 30);
+            guna2HtmlLabel4.Size = new Size(62, 19);
             guna2HtmlLabel4.TabIndex = 5;
             guna2HtmlLabel4.Text = "Username";
             guna2HtmlLabel4.Click += guna2HtmlLabel4_Click;
@@ -154,10 +170,11 @@
             btnButton.FillColor = Color.Firebrick;
             btnButton.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnButton.ForeColor = Color.White;
-            btnButton.Location = new Point(0, 246);
+            btnButton.Location = new Point(0, 148);
+            btnButton.Margin = new Padding(2);
             btnButton.Name = "btnButton";
             btnButton.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            btnButton.Size = new Size(300, 54);
+            btnButton.Size = new Size(210, 32);
             btnButton.TabIndex = 4;
             btnButton.Text = "Enter";
             btnButton.Click += btnButton_Click;
@@ -175,13 +192,12 @@
             guna2TextBox3.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             guna2TextBox3.Font = new Font("Segoe UI", 9F);
             guna2TextBox3.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox3.Location = new Point(23, 159);
-            guna2TextBox3.Margin = new Padding(4, 5, 4, 5);
+            guna2TextBox3.Location = new Point(16, 95);
             guna2TextBox3.Name = "guna2TextBox3";
             guna2TextBox3.PlaceholderText = "";
             guna2TextBox3.SelectedText = "";
             guna2TextBox3.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            guna2TextBox3.Size = new Size(254, 41);
+            guna2TextBox3.Size = new Size(178, 25);
             guna2TextBox3.TabIndex = 3;
             // 
             // guna2TextBox2
@@ -197,22 +213,22 @@
             guna2TextBox2.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             guna2TextBox2.Font = new Font("Segoe UI", 9F);
             guna2TextBox2.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox2.Location = new Point(23, 108);
-            guna2TextBox2.Margin = new Padding(4, 5, 4, 5);
+            guna2TextBox2.Location = new Point(16, 65);
             guna2TextBox2.Name = "guna2TextBox2";
             guna2TextBox2.PlaceholderText = "";
             guna2TextBox2.SelectedText = "";
             guna2TextBox2.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            guna2TextBox2.Size = new Size(254, 41);
+            guna2TextBox2.Size = new Size(178, 25);
             guna2TextBox2.TabIndex = 2;
             // 
             // guna2HtmlLabel3
             // 
             guna2HtmlLabel3.BackColor = Color.Transparent;
             guna2HtmlLabel3.Font = new Font("Segoe UI", 12F);
-            guna2HtmlLabel3.Location = new Point(23, 56);
+            guna2HtmlLabel3.Location = new Point(16, 34);
+            guna2HtmlLabel3.Margin = new Padding(2);
             guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            guna2HtmlLabel3.Size = new Size(143, 34);
+            guna2HtmlLabel3.Size = new Size(94, 23);
             guna2HtmlLabel3.TabIndex = 1;
             guna2HtmlLabel3.Text = "Please Log in";
             // 
@@ -220,29 +236,21 @@
             // 
             guna2HtmlLabel2.BackColor = Color.Transparent;
             guna2HtmlLabel2.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            guna2HtmlLabel2.Location = new Point(23, 16);
+            guna2HtmlLabel2.Location = new Point(16, 10);
+            guna2HtmlLabel2.Margin = new Padding(2);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            guna2HtmlLabel2.Size = new Size(183, 34);
+            guna2HtmlLabel2.Size = new Size(123, 23);
             guna2HtmlLabel2.TabIndex = 0;
             guna2HtmlLabel2.Text = "Welcome Back!";
             guna2HtmlLabel2.Click += guna2HtmlLabel2_Click;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(23, 205);
-            label1.Name = "label1";
-            label1.Size = new Size(197, 25);
-            label1.TabIndex = 7;
-            label1.Text = "Don't have an account?";
-            label1.Click += label1_Click;
-            // 
             // LoginForm
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1264, 681);
             Controls.Add(guna2GradientPanel1);
+            Margin = new Padding(2);
             Name = "LoginForm";
             Text = "LoginForm";
             guna2GradientPanel1.ResumeLayout(false);

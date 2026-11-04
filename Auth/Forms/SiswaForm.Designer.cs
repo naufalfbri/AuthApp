@@ -72,8 +72,9 @@
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label1.AutoSize = true;
-            label1.FlatStyle = FlatStyle.Popup;
+            label1.FlatStyle = FlatStyle.System;
             label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(969, 9);
             label1.Name = "label1";
@@ -81,14 +82,16 @@
             label1.TabIndex = 2;
             label1.Text = "Hi! Valencia Xaviera Lim";
             label1.TextAlign = ContentAlignment.TopRight;
+            label1.Click += label1_Click;
             // 
             // label3
             // 
+            label3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label3.AutoSize = true;
             label3.BackColor = Color.White;
-            label3.FlatStyle = FlatStyle.Popup;
+            label3.FlatStyle = FlatStyle.System;
             label3.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label3.Location = new Point(1030, 34);
+            label3.Location = new Point(1033, 34);
             label3.Name = "label3";
             label3.Size = new Size(181, 17);
             label3.TabIndex = 4;
