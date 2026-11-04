@@ -56,9 +56,10 @@
             // 
             guna2Panel1.CustomizableEdges = customizableEdges1;
             guna2Panel1.Location = new Point(0, 0);
+            guna2Panel1.Margin = new Padding(4, 5, 4, 5);
             guna2Panel1.Name = "guna2Panel1";
             guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2Panel1.Size = new Size(50, 450);
+            guna2Panel1.Size = new Size(71, 750);
             guna2Panel1.TabIndex = 0;
             // 
             // guna2TextBox1
@@ -73,12 +74,13 @@
             guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             guna2TextBox1.Font = new Font("Segoe UI", 9F);
             guna2TextBox1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Location = new Point(56, 12);
+            guna2TextBox1.Location = new Point(80, 20);
+            guna2TextBox1.Margin = new Padding(6, 8, 6, 8);
             guna2TextBox1.Name = "guna2TextBox1";
             guna2TextBox1.PlaceholderText = "Search Tugas";
             guna2TextBox1.SelectedText = "";
             guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2TextBox1.Size = new Size(268, 36);
+            guna2TextBox1.Size = new Size(383, 60);
             guna2TextBox1.TabIndex = 1;
             // 
             // label1
@@ -86,13 +88,13 @@
             label1.AutoSize = true;
             label1.FlatStyle = FlatStyle.Popup;
             label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(969, 9);
+            label1.Location = new Point(1384, 15);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(248, 30);
+            label1.Size = new Size(378, 45);
             label1.TabIndex = 2;
             label1.Text = "Hi! Valencia Xaviera Lim";
             label1.TextAlign = ContentAlignment.TopRight;
-            label1.Click += label1_Click;
             // 
             // label3
             // 
@@ -100,9 +102,10 @@
             label3.BackColor = Color.White;
             label3.FlatStyle = FlatStyle.Popup;
             label3.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label3.Location = new Point(1030, 34);
+            label3.Location = new Point(1471, 57);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(181, 17);
+            label3.Size = new Size(279, 28);
             label3.TabIndex = 4;
             label3.Text = "@ValenciaXavieraLim@Tel-U";
             label3.TextAlign = ContentAlignment.TopRight;
@@ -120,10 +123,11 @@
             guna2Button1.FillColor = Color.White;
             guna2Button1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2Button1.ForeColor = Color.Black;
-            guna2Button1.Location = new Point(56, 163);
+            guna2Button1.Location = new Point(80, 272);
+            guna2Button1.Margin = new Padding(4, 5, 4, 5);
             guna2Button1.Name = "guna2Button1";
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            guna2Button1.Size = new Size(180, 45);
+            guna2Button1.Size = new Size(257, 75);
             guna2Button1.TabIndex = 5;
             guna2Button1.Text = "Agama";
             // 
@@ -140,10 +144,11 @@
             guna2Button2.FillColor = Color.White;
             guna2Button2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2Button2.ForeColor = Color.Black;
-            guna2Button2.Location = new Point(242, 163);
+            guna2Button2.Location = new Point(346, 272);
+            guna2Button2.Margin = new Padding(4, 5, 4, 5);
             guna2Button2.Name = "guna2Button2";
             guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            guna2Button2.Size = new Size(180, 45);
+            guna2Button2.Size = new Size(257, 75);
             guna2Button2.TabIndex = 6;
             guna2Button2.Text = "IPA";
             // 
@@ -160,10 +165,11 @@
             guna2Button3.FillColor = Color.White;
             guna2Button3.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2Button3.ForeColor = Color.Black;
-            guna2Button3.Location = new Point(428, 163);
+            guna2Button3.Location = new Point(611, 272);
+            guna2Button3.Margin = new Padding(4, 5, 4, 5);
             guna2Button3.Name = "guna2Button3";
             guna2Button3.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            guna2Button3.Size = new Size(180, 45);
+            guna2Button3.Size = new Size(257, 75);
             guna2Button3.TabIndex = 7;
             guna2Button3.Text = "Matematika";
             // 
@@ -180,19 +186,20 @@
             guna2Button4.FillColor = Color.White;
             guna2Button4.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2Button4.ForeColor = Color.Black;
-            guna2Button4.Location = new Point(614, 163);
+            guna2Button4.Location = new Point(877, 272);
+            guna2Button4.Margin = new Padding(4, 5, 4, 5);
             guna2Button4.Name = "guna2Button4";
             guna2Button4.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            guna2Button4.Size = new Size(180, 45);
+            guna2Button4.Size = new Size(257, 75);
             guna2Button4.TabIndex = 8;
             guna2Button4.Text = "Informatika";
             // 
             // SiswaForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1264, 681);
+            ClientSize = new Size(1806, 1050);
             Controls.Add(guna2Button4);
             Controls.Add(guna2Button3);
             Controls.Add(guna2Button2);
@@ -201,7 +208,8 @@
             Controls.Add(label1);
             Controls.Add(guna2TextBox1);
             Controls.Add(guna2Panel1);
-            MinimumSize = new Size(1280, 720);
+            Margin = new Padding(4, 5, 4, 5);
+            MinimumSize = new Size(1819, 1006);
             Name = "SiswaForm";
             Text = "SiswaForm";
             ResumeLayout(false);

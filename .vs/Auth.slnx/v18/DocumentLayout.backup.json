@@ -3,36 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\auth\\forms\\guruform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:auth\\forms\\guruform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{334F3B23-EFE8-6F1A-5E5F-9A2275D56E28}|Auth\\Auth.csproj|c:\\users\\lenovo\\source\\repos\\naufalfbri\\auth\\auth\\forms\\siswaform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{334F3B23-EFE8-6F1A-5E5F-9A2275D56E28}|Auth\\Auth.csproj|solutionrelative:auth\\forms\\siswaform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\Auth\\Forms\\SiswaForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Auth\\Forms\\SiswaForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{334F3B23-EFE8-6F1A-5E5F-9A2275D56E28}|Auth\\Auth.csproj|C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\Auth\\Forms\\SiswaForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{334F3B23-EFE8-6F1A-5E5F-9A2275D56E28}|Auth\\Auth.csproj|solutionrelative:Auth\\Forms\\SiswaForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\Auth\\Forms\\SiswaForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Auth\\Forms\\SiswaForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{334F3B23-EFE8-6F1A-5E5F-9A2275D56E28}|Auth\\Auth.csproj|c:\\users\\lenovo\\source\\repos\\naufalfbri\\auth\\auth\\forms\\siswaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{334F3B23-EFE8-6F1A-5E5F-9A2275D56E28}|Auth\\Auth.csproj|solutionrelative:auth\\forms\\siswaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\auth\\forms\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:auth\\forms\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{334F3B23-EFE8-6F1A-5E5F-9A2275D56E28}|Auth\\Auth.csproj|c:\\users\\lenovo\\source\\repos\\naufalfbri\\auth\\auth\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{334F3B23-EFE8-6F1A-5E5F-9A2275D56E28}|Auth\\Auth.csproj|solutionrelative:auth\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\Auth\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Auth\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{334F3B23-EFE8-6F1A-5E5F-9A2275D56E28}|Auth\\Auth.csproj|c:\\users\\lenovo\\source\\repos\\naufalfbri\\auth\\auth\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{334F3B23-EFE8-6F1A-5E5F-9A2275D56E28}|Auth\\Auth.csproj|solutionrelative:auth\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\auth\\services\\authorizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:auth\\services\\authorizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{334F3B23-EFE8-6F1A-5E5F-9A2275D56E28}|Auth\\Auth.csproj|c:\\users\\lenovo\\source\\repos\\naufalfbri\\auth\\auth\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{334F3B23-EFE8-6F1A-5E5F-9A2275D56E28}|Auth\\Auth.csproj|solutionrelative:auth\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\auth\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:auth\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{334F3B23-EFE8-6F1A-5E5F-9A2275D56E28}|Auth\\Auth.csproj|C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\auth\\forms\\guruform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{334F3B23-EFE8-6F1A-5E5F-9A2275D56E28}|Auth\\Auth.csproj|solutionrelative:auth\\forms\\guruform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\auth\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:auth\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{334F3B23-EFE8-6F1A-5E5F-9A2275D56E28}|Auth\\Auth.csproj|C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\auth\\forms\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{334F3B23-EFE8-6F1A-5E5F-9A2275D56E28}|Auth\\Auth.csproj|solutionrelative:auth\\forms\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{334F3B23-EFE8-6F1A-5E5F-9A2275D56E28}|Auth\\Auth.csproj|C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\auth\\services\\authorizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{334F3B23-EFE8-6F1A-5E5F-9A2275D56E28}|Auth\\Auth.csproj|solutionrelative:auth\\services\\authorizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{334F3B23-EFE8-6F1A-5E5F-9A2275D56E28}|Auth\\Auth.csproj|C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\auth\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{334F3B23-EFE8-6F1A-5E5F-9A2275D56E28}|Auth\\Auth.csproj|solutionrelative:auth\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{334F3B23-EFE8-6F1A-5E5F-9A2275D56E28}|Auth\\Auth.csproj|C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\auth\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{334F3B23-EFE8-6F1A-5E5F-9A2275D56E28}|Auth\\Auth.csproj|solutionrelative:auth\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,44 +62,94 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SiswaForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\Auth\\Forms\\SiswaForm.cs",
-              "RelativeDocumentMoniker": "Auth\\Forms\\SiswaForm.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\Auth\\Forms\\SiswaForm.cs [Design]",
-              "RelativeToolTip": "Auth\\Forms\\SiswaForm.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "SiswaForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\Auth\\Forms\\SiswaForm.Designer.cs",
+              "RelativeDocumentMoniker": "Auth\\Forms\\SiswaForm.Designer.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\Auth\\Forms\\SiswaForm.Designer.cs*",
+              "RelativeToolTip": "Auth\\Forms\\SiswaForm.Designer.cs*",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAMwF8AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-02T23:26:08.536Z",
+              "WhenOpened": "2026-11-04T12:25:19.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\Auth\\Forms\\LoginForm.cs",
+              "RelativeDocumentMoniker": "Auth\\Forms\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\Auth\\Forms\\LoginForm.cs [Design]",
+              "RelativeToolTip": "Auth\\Forms\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-03T01:25:45.051Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "SiswaForm.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\Auth\\Forms\\SiswaForm.cs",
               "RelativeDocumentMoniker": "Auth\\Forms\\SiswaForm.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\Auth\\Forms\\SiswaForm.cs",
-              "RelativeToolTip": "Auth\\Forms\\SiswaForm.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAnwCIAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\Auth\\Forms\\SiswaForm.cs*",
+              "RelativeToolTip": "Auth\\Forms\\SiswaForm.cs*",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-03T00:39:39.278Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "SiswaForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\Auth\\Forms\\SiswaForm.cs",
+              "RelativeDocumentMoniker": "Auth\\Forms\\SiswaForm.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\Auth\\Forms\\SiswaForm.cs [Design]*",
+              "RelativeToolTip": "Auth\\Forms\\SiswaForm.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T23:26:08.536Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\Auth\\Program.cs",
+              "RelativeDocumentMoniker": "Auth\\Program.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\Auth\\Program.cs*",
+              "RelativeToolTip": "Auth\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T23:20:53.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\Auth\\Forms\\LoginForm.cs",
+              "RelativeDocumentMoniker": "Auth\\Forms\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\Auth\\Forms\\LoginForm.cs",
+              "RelativeToolTip": "Auth\\Forms\\LoginForm.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAgwCoAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T11:16:04.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "GuruForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\Auth\\Forms\\GuruForm.cs",
               "RelativeDocumentMoniker": "Auth\\Forms\\GuruForm.cs",
               "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\Auth\\Forms\\GuruForm.cs [Design]",
               "RelativeToolTip": "Auth\\Forms\\GuruForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-02T23:25:49.676Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-11-02T23:25:49.676Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "AdminForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\Auth\\Forms\\AdminForm.cs",
               "RelativeDocumentMoniker": "Auth\\Forms\\AdminForm.cs",
@@ -98,19 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\Auth\\Program.cs",
-              "RelativeDocumentMoniker": "Auth\\Program.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\Auth\\Program.cs",
-              "RelativeToolTip": "Auth\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-02T23:20:53.085Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "AuthorizationService.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\Auth\\Services\\AuthorizationService.cs",
               "RelativeDocumentMoniker": "Auth\\Services\\AuthorizationService.cs",
@@ -121,7 +171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "User.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\Auth\\Models\\User.cs",
               "RelativeDocumentMoniker": "Auth\\Models\\User.cs",
@@ -132,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "AuthService.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\naufalfbri\\Auth\\Auth\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "Auth\\Services\\AuthService.cs",
