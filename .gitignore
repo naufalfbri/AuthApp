@@ -1,3 +1,9 @@
 .vs/
 /Auth/bin 
 /Auth/obj
+
+*.csproj.user
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
