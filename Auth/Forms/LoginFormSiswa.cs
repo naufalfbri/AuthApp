@@ -9,9 +9,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace Auth.Forms
 {
-    public partial class LoginForm : Form
+    public partial class LoginFormSiswa : Form
     {
-        public LoginForm()
+        public LoginFormSiswa()
         {
             InitializeComponent();
         }
