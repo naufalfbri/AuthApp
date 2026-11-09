@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
+            LabelVer = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -40,6 +41,7 @@
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel1.AutoSize = true;
             panel1.BackColor = Color.White;
+            panel1.Controls.Add(LabelVer);
             panel1.Controls.Add(pictureBox1);
             panel1.Location = new Point(0, 0);
             panel1.MaximumSize = new Size(640, 685);
@@ -59,6 +61,17 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
+            // LabelVer
+            // 
+            LabelVer.AutoSize = true;
+            LabelVer.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            LabelVer.ForeColor = SystemColors.ControlDark;
+            LabelVer.Location = new Point(30, 657);
+            LabelVer.Name = "LabelVer";
+            LabelVer.Size = new Size(44, 15);
+            LabelVer.TabIndex = 1;
+            LabelVer.Text = "Ver 1.0";
+            // 
             // LoginForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -74,6 +87,7 @@
             Text = "AuthApp";
             Load += LoginForm_Load;
             panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -83,5 +97,6 @@
 
         private Panel panel1;
         private PictureBox pictureBox1;
+        private Label LabelVer;
     }
 }
