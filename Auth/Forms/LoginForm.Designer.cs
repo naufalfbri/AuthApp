@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             panel1 = new Panel();
-            pictureBox1 = new PictureBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
             panel2 = new Panel();
+            label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
+            pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -54,93 +54,97 @@
             panel1.Controls.Add(label1);
             panel1.Controls.Add(pictureBox1);
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(4, 5, 4, 5);
-            panel1.MaximumSize = new Size(914, 1142);
-            panel1.MinimumSize = new Size(914, 1142);
+            panel1.MaximumSize = new Size(640, 685);
+            panel1.MinimumSize = new Size(640, 685);
             panel1.Name = "panel1";
-            panel1.Size = new Size(914, 1142);
+            panel1.Size = new Size(640, 685);
             panel1.TabIndex = 0;
             // 
-            // pictureBox1
+            // panel2
             // 
-            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox1.Image = Properties.Resources.images;
-            pictureBox1.Location = new Point(43, 50);
-            pictureBox1.Margin = new Padding(4, 5, 4, 5);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(214, 75);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            panel2.BackColor = Color.White;
+            panel2.Location = new Point(122, 172);
+            panel2.Margin = new Padding(2, 2, 2, 2);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(349, 55);
+            panel2.TabIndex = 6;
             // 
-            // label1
+            // label5
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(286, 207);
-            label1.Name = "label1";
-            label1.Size = new Size(17, 25);
-            label1.TabIndex = 1;
-            label1.Text = " ";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(286, 191);
-            label2.Name = "label2";
-            label2.Size = new Size(238, 45);
-            label2.TabIndex = 2;
-            label2.Text = "Welcome Back";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(338, 549);
-            label3.Name = "label3";
-            label3.Size = new Size(238, 45);
-            label3.TabIndex = 3;
-            label3.Text = "Welcome Back";
+            label5.AutoSize = true;
+            label5.Location = new Point(174, 142);
+            label5.Margin = new Padding(2, 0, 2, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(218, 15);
+            label5.TabIndex = 5;
+            label5.Text = "Welcome back, please enter your details";
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(346, 557);
+            label4.Location = new Point(242, 334);
+            label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
-            label4.Size = new Size(238, 45);
+            label4.Size = new Size(163, 30);
             label4.TabIndex = 4;
             label4.Text = "Welcome Back";
             // 
-            // label5
+            // label3
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(248, 236);
-            label5.Name = "label5";
-            label5.Size = new Size(328, 25);
-            label5.TabIndex = 5;
-            label5.Text = "Welcome back, please enter your details";
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(237, 329);
+            label3.Margin = new Padding(2, 0, 2, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(163, 30);
+            label3.TabIndex = 3;
+            label3.Text = "Welcome Back";
             // 
-            // panel2
+            // label2
             // 
-            panel2.BackColor = Color.White;
-            panel2.Location = new Point(175, 287);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(499, 92);
-            panel2.TabIndex = 6;
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(200, 115);
+            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(163, 30);
+            label2.TabIndex = 2;
+            label2.Text = "Welcome Back";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(200, 124);
+            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(10, 15);
+            label1.TabIndex = 1;
+            label1.Text = " ";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox1.Image = Properties.Resources.images;
+            pictureBox1.Location = new Point(30, 30);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(150, 45);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // LoginForm
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Firebrick;
-            ClientSize = new Size(1797, 1050);
+            ClientSize = new Size(1262, 630);
             Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(4, 5, 4, 5);
             MaximizeBox = false;
-            MaximumSize = new Size(1819, 1163);
-            MinimumSize = new Size(1819, 1006);
+            MaximumSize = new Size(1278, 713);
+            MinimumSize = new Size(1278, 619);
             Name = "LoginForm";
             Text = "AuthApp";
             Load += LoginForm_Load;
