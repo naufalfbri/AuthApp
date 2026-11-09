@@ -28,15 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             panel1 = new Panel();
-            panel2 = new Panel();
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
             pictureBox1 = new PictureBox();
+            guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -46,7 +48,7 @@
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel1.AutoSize = true;
             panel1.BackColor = Color.White;
-            panel1.Controls.Add(panel2);
+            panel1.Controls.Add(guna2Panel1);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label3);
@@ -59,15 +61,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(640, 685);
             panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            panel2.BackColor = Color.White;
-            panel2.Location = new Point(122, 172);
-            panel2.Margin = new Padding(2, 2, 2, 2);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(349, 55);
-            panel2.TabIndex = 6;
             // 
             // label5
             // 
@@ -105,12 +98,13 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(200, 115);
+            label2.Location = new Point(320, 110);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
             label2.Size = new Size(163, 30);
             label2.TabIndex = 2;
             label2.Text = "Welcome Back";
+            label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
@@ -132,6 +126,18 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            // 
+            // guna2Panel1
+            // 
+            guna2Panel1.BackColor = Color.LightGray;
+            guna2Panel1.BorderRadius = 20;
+            guna2Panel1.BorderThickness = 1;
+            guna2Panel1.CustomizableEdges = customizableEdges1;
+            guna2Panel1.Location = new Point(183, 176);
+            guna2Panel1.Name = "guna2Panel1";
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            guna2Panel1.Size = new Size(200, 100);
+            guna2Panel1.TabIndex = 6;
             // 
             // LoginForm
             // 
@@ -161,9 +167,9 @@
         private PictureBox pictureBox1;
         private Label label1;
         private Label label2;
-        private Panel panel2;
         private Label label5;
         private Label label4;
         private Label label3;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
     }
 }
