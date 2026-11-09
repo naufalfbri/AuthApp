@@ -14,5 +14,10 @@ namespace Auth.Forms
         {
             InitializeComponent();
         }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -28,12 +28,60 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "LoginForm";
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
+            panel1 = new Panel();
+            pictureBox1 = new PictureBox();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
+            // 
+            // panel1
+            // 
+            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            panel1.AutoSize = true;
+            panel1.BackColor = Color.White;
+            panel1.Controls.Add(pictureBox1);
+            panel1.Location = new Point(0, 0);
+            panel1.MaximumSize = new Size(640, 685);
+            panel1.MinimumSize = new Size(640, 685);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(640, 685);
+            panel1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox1.Image = Properties.Resources.images;
+            pictureBox1.Location = new Point(30, 30);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(150, 45);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            // 
+            // LoginForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Firebrick;
+            ClientSize = new Size(1264, 681);
+            Controls.Add(panel1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            MaximumSize = new Size(1920, 1080);
+            MinimumSize = new Size(1280, 720);
+            Name = "LoginForm";
+            Text = "AuthApp";
+            Load += LoginForm_Load;
+            panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Panel panel1;
+        private PictureBox pictureBox1;
     }
 }
