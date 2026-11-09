@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace Auth.Forms
 {
-    public partial class LoginFormSiswa : Form
+    public partial class LoginForm : Form
     {
-        public LoginFormSiswa()
+        public LoginForm()
         {
             InitializeComponent();
         }
