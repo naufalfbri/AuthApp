@@ -19,5 +19,20 @@ namespace Auth.Forms
         {
 
         }
+
+        private void textBoxIconRounded1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxIconRounded2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
