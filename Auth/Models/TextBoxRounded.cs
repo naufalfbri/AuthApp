@@ -4,6 +4,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
+using WinFormsTimer = System.Windows.Forms.Timer;
 
 namespace Auth.Models
 {
@@ -17,15 +18,97 @@ namespace Auth.Models
         private int borderRadius = 15;
         private int borderSize = 1;
         private Color borderColor = Color.LightGray;
+        private Color borderHoverColor = Color.DeepSkyBlue;
         private Color borderFocusColor = Color.DodgerBlue;
         private Color placeholderColor = Color.Gray;
         private string placeholderText = string.Empty;
+
+        // Variabel animasi border
+        private Color currentBorderColor;
+        private Color targetBorderColor;
+        private readonly WinFormsTimer animationTimer = new WinFormsTimer();
+        private bool enableAnimation = true;
+        private bool isHovered = false;
         private bool isFocused = false;
 
         #region Properti Designer
 
         [Category("Appearance")]
-        [Description("Teks petunjuk (placeholder) yang tetap tampil saat teks kosong.")]
+        [Description("Radius kelengkungan sudut.")]
+        [DefaultValue(15)]
+        public int BorderRadius
+        {
+            get => borderRadius;
+            set
+            {
+                borderRadius = Math.Max(0, value);
+                this.Invalidate();
+            }
+        }
+
+        [Category("Appearance")]
+        [Description("Ketebalan garis border.")]
+        [DefaultValue(1)]
+        public int BorderSize
+        {
+            get => borderSize;
+            set
+            {
+                borderSize = Math.Max(0, value);
+                this.Invalidate();
+            }
+        }
+
+        [Category("Appearance")]
+        [Description("Warna border saat keadaan normal.")]
+        [DefaultValue(typeof(Color), "LightGray")]
+        public Color BorderColor
+        {
+            get => borderColor;
+            set
+            {
+                borderColor = value;
+                UpdateBorderColorState();
+            }
+        }
+
+        [Category("Appearance")]
+        [Description("Warna border saat kursor diarahkan (hover).")]
+        [DefaultValue(typeof(Color), "DeepSkyBlue")]
+        public Color BorderHoverColor
+        {
+            get => borderHoverColor;
+            set
+            {
+                borderHoverColor = value;
+                UpdateBorderColorState();
+            }
+        }
+
+        [Category("Appearance")]
+        [Description("Warna border saat textbox aktif (focused/diklik).")]
+        [DefaultValue(typeof(Color), "DodgerBlue")]
+        public Color BorderFocusColor
+        {
+            get => borderFocusColor;
+            set
+            {
+                borderFocusColor = value;
+                UpdateBorderColorState();
+            }
+        }
+
+        [Category("Behavior")]
+        [Description("Menentukan apakah animasi transisi warna border aktif.")]
+        [DefaultValue(true)]
+        public bool EnableAnimation
+        {
+            get => enableAnimation;
+            set => enableAnimation = value;
+        }
+
+        [Category("Appearance")]
+        [Description("Teks petunjuk (placeholder) yang tampil saat teks kosong.")]
         [DefaultValue("")]
         public string PlaceholderText
         {
@@ -63,54 +146,6 @@ namespace Auth.Models
                 pictureBoxIcon.Visible = (value != null);
                 UpdateLayoutPadding();
             }
-        }
-
-        [Category("Appearance")]
-        [Description("Radius kelengkungan sudut.")]
-        [DefaultValue(15)]
-        public int BorderRadius
-        {
-            get => borderRadius;
-            set
-            {
-                borderRadius = Math.Max(0, value);
-                this.Invalidate();
-            }
-        }
-
-        [Category("Appearance")]
-        [Description("Ketebalan garis border.")]
-        [DefaultValue(1)]
-        public int BorderSize
-        {
-            get => borderSize;
-            set
-            {
-                borderSize = Math.Max(0, value);
-                this.Invalidate();
-            }
-        }
-
-        [Category("Appearance")]
-        [Description("Warna border normal.")]
-        [DefaultValue(typeof(Color), "LightGray")]
-        public Color BorderColor
-        {
-            get => borderColor;
-            set
-            {
-                borderColor = value;
-                this.Invalidate();
-            }
-        }
-
-        [Category("Appearance")]
-        [Description("Warna border saat aktif (focused).")]
-        [DefaultValue(typeof(Color), "DodgerBlue")]
-        public Color BorderFocusColor
-        {
-            get => borderFocusColor;
-            set => borderFocusColor = value;
         }
 
         [Category("Behavior")]
@@ -205,14 +240,14 @@ namespace Auth.Models
 
         public TextBoxIconRounded()
         {
-            // Pengaturan PictureBox Ikon
+            // Setup PictureBox Icon
             pictureBoxIcon.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBoxIcon.Size = new Size(20, 20);
             pictureBoxIcon.Margin = new Padding(0);
             pictureBoxIcon.Visible = false;
             pictureBoxIcon.Click += (s, e) => innerTextBox.Focus();
 
-            // Pengaturan Label Placeholder Custom
+            // Setup Label Placeholder
             lblPlaceholder.AutoSize = true;
             lblPlaceholder.ForeColor = placeholderColor;
             lblPlaceholder.BackColor = this.BackColor;
@@ -220,7 +255,7 @@ namespace Auth.Models
             lblPlaceholder.Cursor = Cursors.IBeam;
             lblPlaceholder.Click += (s, e) => innerTextBox.Focus();
 
-            // Pengaturan Inner TextBox
+            // Setup Inner TextBox
             innerTextBox.BorderStyle = BorderStyle.None;
             innerTextBox.Dock = DockStyle.Fill;
             innerTextBox.BackColor = this.BackColor;
@@ -231,13 +266,28 @@ namespace Auth.Models
                 CheckPlaceholder();
                 TextChanged?.Invoke(this, e);
             };
-            innerTextBox.Enter += (s, e) => { isFocused = true; this.Invalidate(); };
-            innerTextBox.Leave += (s, e) => { isFocused = false; this.Invalidate(); };
+
+            // Focus Handler
+            innerTextBox.Enter += (s, e) => { isFocused = true; UpdateBorderColorState(); };
+            innerTextBox.Leave += (s, e) => { isFocused = false; EvaluateHoverState(); };
             innerTextBox.Click += (s, e) => this.OnClick(e);
+
+            // Hook Event Hover pada semua kontrol internal
+            AttachHoverEvents(this);
+            AttachHoverEvents(innerTextBox);
+            AttachHoverEvents(pictureBoxIcon);
+            AttachHoverEvents(lblPlaceholder);
 
             this.DoubleBuffered = true;
             this.BackColor = Color.White;
             this.Size = new Size(300, 40);
+
+            currentBorderColor = BorderColor;
+            targetBorderColor = BorderColor;
+
+            // Timer Animasi (60 FPS / 15ms)
+            animationTimer.Interval = 15;
+            animationTimer.Tick += AnimationTimer_Tick;
 
             this.Controls.Add(lblPlaceholder);
             this.Controls.Add(innerTextBox);
@@ -249,6 +299,86 @@ namespace Auth.Models
             UpdateControlHeight();
             CheckPlaceholder();
         }
+
+        #region Hover & Animation Logic
+
+        private void AttachHoverEvents(Control ctrl)
+        {
+            ctrl.MouseEnter += (s, e) =>
+            {
+                isHovered = true;
+                UpdateBorderColorState();
+            };
+
+            ctrl.MouseLeave += (s, e) =>
+            {
+                // Cek apakah kursor benar-benar keluar dari area UserControl
+                EvaluateHoverState();
+            };
+        }
+
+        private void EvaluateHoverState()
+        {
+            Point mousePos = this.PointToClient(Cursor.Position);
+            isHovered = this.ClientRectangle.Contains(mousePos);
+            UpdateBorderColorState();
+        }
+
+        private void UpdateBorderColorState()
+        {
+            Color target = BorderColor;
+
+            if (isFocused)
+                target = BorderFocusColor;
+            else if (isHovered)
+                target = BorderHoverColor;
+
+            StartBorderAnimation(target);
+        }
+
+        private void StartBorderAnimation(Color targetColor)
+        {
+            targetBorderColor = targetColor;
+
+            if (enableAnimation && !this.DesignMode)
+            {
+                animationTimer.Start();
+            }
+            else
+            {
+                currentBorderColor = targetColor;
+                this.Invalidate();
+            }
+        }
+
+        private void AnimationTimer_Tick(object? sender, EventArgs e)
+        {
+            if (currentBorderColor.ToArgb() == targetBorderColor.ToArgb())
+            {
+                animationTimer.Stop();
+                return;
+            }
+
+            int r = InterpolateComponent(currentBorderColor.R, targetBorderColor.R);
+            int g = InterpolateComponent(currentBorderColor.G, targetBorderColor.G);
+            int b = InterpolateComponent(currentBorderColor.B, targetBorderColor.B);
+            int a = InterpolateComponent(currentBorderColor.A, targetBorderColor.A);
+
+            currentBorderColor = Color.FromArgb(a, r, g, b);
+            this.Invalidate();
+        }
+
+        private int InterpolateComponent(int current, int target)
+        {
+            if (current == target) return target;
+            int diff = target - current;
+            int step = Math.Sign(diff) * Math.Max(1, Math.Abs(diff) / 3);
+            int next = current + step;
+
+            return (diff > 0 && next > target) || (diff < 0 && next < target) ? target : next;
+        }
+
+        #endregion
 
         private void CheckPlaceholder()
         {
@@ -314,8 +444,6 @@ namespace Auth.Models
 
             if (rectSurface.Width <= 0 || rectSurface.Height <= 0) return;
 
-            Color currentBorderColor = isFocused ? BorderFocusColor : BorderColor;
-
             if (BorderRadius > 0)
             {
                 using (GraphicsPath pathSurface = GetRoundedPath(rectSurface, BorderRadius))
@@ -371,6 +499,16 @@ namespace Auth.Models
             base.OnResize(e);
             UpdateControlHeight();
             this.Invalidate();
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                animationTimer.Stop();
+                animationTimer.Dispose();
+            }
+            base.Dispose(disposing);
         }
     }
 }

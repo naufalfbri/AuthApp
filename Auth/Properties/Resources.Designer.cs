@@ -79,5 +79,15 @@ namespace Auth.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_Yayasan_Pendidikan_Telkom {
+            get {
+                object obj = ResourceManager.GetObject("Logo_Yayasan_Pendidikan_Telkom", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
