@@ -68,7 +68,7 @@
             Controls.Add(panel1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
-            MaximumSize = new Size(1920, 1080);
+            MaximumSize = new Size(1280, 720);
             MinimumSize = new Size(1280, 720);
             Name = "LoginForm";
             Text = "AuthApp";
