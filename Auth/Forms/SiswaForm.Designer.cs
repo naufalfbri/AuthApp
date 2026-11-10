@@ -49,6 +49,7 @@
             // buttonRounded1
             // 
             buttonRounded1.BackColor = Color.Firebrick;
+            buttonRounded1.BackgroundColor = Color.Firebrick;
             buttonRounded1.BorderColor = Color.Maroon;
             buttonRounded1.ClickColor = Color.Maroon;
             buttonRounded1.FlatAppearance.BorderSize = 0;
@@ -57,13 +58,14 @@
             buttonRounded1.ForeColor = Color.White;
             buttonRounded1.HoverColor = Color.Maroon;
             buttonRounded1.ImageAlign = ContentAlignment.MiddleLeft;
-            buttonRounded1.Location = new Point(9, 138);
-            buttonRounded1.Margin = new Padding(0, 0, 0, 3);
+            buttonRounded1.Location = new Point(6, 83);
+            buttonRounded1.Margin = new Padding(0);
             buttonRounded1.Name = "buttonRounded1";
-            buttonRounded1.Size = new Size(285, 60);
+            buttonRounded1.Padding = new Padding(20, 0, 0, 0);
+            buttonRounded1.Size = new Size(200, 36);
             buttonRounded1.TabIndex = 0;
             buttonRounded1.Text = "Dashboard";
-            buttonRounded1.TextAlign = ContentAlignment.BottomLeft;
+            buttonRounded1.TextAlign = ContentAlignment.MiddleLeft;
             buttonRounded1.TextImageRelation = TextImageRelation.ImageBeforeText;
             buttonRounded1.UseMnemonic = false;
             buttonRounded1.UseVisualStyleBackColor = false;
@@ -80,8 +82,9 @@
             panelRounded1.Controls.Add(buttonRounded5);
             panelRounded1.Dock = DockStyle.Left;
             panelRounded1.Location = new Point(0, 0);
+            panelRounded1.Margin = new Padding(2);
             panelRounded1.Name = "panelRounded1";
-            panelRounded1.Size = new Size(303, 813);
+            panelRounded1.Size = new Size(212, 488);
             panelRounded1.TabIndex = 1;
             // 
             // buttonRounded7
@@ -94,9 +97,10 @@
             buttonRounded7.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             buttonRounded7.ForeColor = Color.Black;
             buttonRounded7.HoverColor = Color.FromArgb(224, 224, 224);
-            buttonRounded7.Location = new Point(9, 336);
+            buttonRounded7.Location = new Point(6, 202);
+            buttonRounded7.Margin = new Padding(2);
             buttonRounded7.Name = "buttonRounded7";
-            buttonRounded7.Size = new Size(285, 60);
+            buttonRounded7.Size = new Size(200, 36);
             buttonRounded7.TabIndex = 5;
             buttonRounded7.Text = "Subject";
             buttonRounded7.UseVisualStyleBackColor = false;
@@ -104,10 +108,10 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.images;
-            pictureBox1.Location = new Point(54, 25);
+            pictureBox1.Location = new Point(38, 15);
             pictureBox1.Margin = new Padding(0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(200, 90);
+            pictureBox1.Size = new Size(140, 54);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
@@ -122,9 +126,10 @@
             buttonRounded6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             buttonRounded6.ForeColor = Color.Black;
             buttonRounded6.HoverColor = Color.FromArgb(224, 224, 224);
-            buttonRounded6.Location = new Point(9, 270);
+            buttonRounded6.Location = new Point(6, 162);
+            buttonRounded6.Margin = new Padding(2);
             buttonRounded6.Name = "buttonRounded6";
-            buttonRounded6.Size = new Size(285, 60);
+            buttonRounded6.Size = new Size(200, 36);
             buttonRounded6.TabIndex = 4;
             buttonRounded6.Text = "Calendar";
             buttonRounded6.UseVisualStyleBackColor = false;
@@ -139,9 +144,10 @@
             buttonRounded5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             buttonRounded5.ForeColor = Color.Black;
             buttonRounded5.HoverColor = Color.FromArgb(224, 224, 224);
-            buttonRounded5.Location = new Point(9, 204);
+            buttonRounded5.Location = new Point(6, 122);
+            buttonRounded5.Margin = new Padding(2);
             buttonRounded5.Name = "buttonRounded5";
-            buttonRounded5.Size = new Size(285, 60);
+            buttonRounded5.Size = new Size(200, 36);
             buttonRounded5.TabIndex = 3;
             buttonRounded5.Text = "Task";
             buttonRounded5.UseVisualStyleBackColor = false;
@@ -154,17 +160,19 @@
             panelRounded2.Controls.Add(pictureBox3);
             panelRounded2.Controls.Add(pictureBox2);
             panelRounded2.Controls.Add(textBoxIconRounded1);
-            panelRounded2.Location = new Point(309, 0);
+            panelRounded2.Location = new Point(216, 0);
+            panelRounded2.Margin = new Padding(2);
             panelRounded2.Name = "panelRounded2";
-            panelRounded2.Size = new Size(1240, 96);
+            panelRounded2.Size = new Size(868, 58);
             panelRounded2.TabIndex = 2;
             // 
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.image_removebg_preview;
-            pictureBox3.Location = new Point(1120, 9);
+            pictureBox3.Location = new Point(784, 5);
+            pictureBox3.Margin = new Padding(2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(88, 75);
+            pictureBox3.Size = new Size(62, 45);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 3;
             pictureBox3.TabStop = false;
@@ -172,10 +180,10 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.bell_icon;
-            pictureBox2.Location = new Point(1057, 9);
+            pictureBox2.Location = new Point(740, 5);
             pictureBox2.Margin = new Padding(0);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(60, 76);
+            pictureBox2.Size = new Size(42, 46);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
@@ -185,30 +193,33 @@
             textBoxIconRounded1.BackColor = Color.White;
             textBoxIconRounded1.BorderFocusColor = Color.DarkGray;
             textBoxIconRounded1.BorderHoverColor = Color.Silver;
-            textBoxIconRounded1.Location = new Point(26, 25);
+            textBoxIconRounded1.Location = new Point(18, 15);
+            textBoxIconRounded1.Margin = new Padding(2);
             textBoxIconRounded1.Name = "textBoxIconRounded1";
             textBoxIconRounded1.Padding = new Padding(14, 10, 14, 10);
             textBoxIconRounded1.PlaceholderText = "Search";
-            textBoxIconRounded1.Size = new Size(450, 46);
+            textBoxIconRounded1.Size = new Size(315, 36);
             textBoxIconRounded1.TabIndex = 3;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(791, 307);
+            label1.Location = new Point(554, 184);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(59, 25);
+            label1.Size = new Size(38, 15);
             label1.TabIndex = 3;
             label1.Text = "label1";
             // 
             // SiswaForm
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1549, 813);
+            ClientSize = new Size(1084, 488);
             Controls.Add(label1);
             Controls.Add(panelRounded2);
             Controls.Add(panelRounded1);
+            Margin = new Padding(2);
             Name = "SiswaForm";
             Text = " ";
             Load += SiswaForm_Load;
