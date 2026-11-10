@@ -34,5 +34,16 @@ namespace Auth.Forms
         {
 
         }
+        private void buttonRounded1_Click(object sender, EventArgs e)
+        {
+            string email = Emailtxt.Text;
+            string password = Passwordtxt.Text;
+
+            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
+            {
+                MessageBox.Show("Email dan Kata Sandi tidak boleh kosong!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+        }
     }
 }

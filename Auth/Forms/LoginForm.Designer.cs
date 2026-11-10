@@ -35,8 +35,8 @@
             buttonRounded1 = new Auth.Models.ButtonRounded();
             label2 = new Label();
             label1 = new Label();
-            textBoxIconRounded2 = new Auth.Models.TextBoxIconRounded();
-            textBoxIconRounded1 = new Auth.Models.TextBoxIconRounded();
+            Passwordtxt = new Auth.Models.TextBoxIconRounded();
+            Emailtxt = new Auth.Models.TextBoxIconRounded();
             pictureBox1 = new PictureBox();
             label3 = new Label();
             label4 = new Label();
@@ -50,14 +50,14 @@
             panelAdvancedRounded1.BackColor = Color.White;
             panelAdvancedRounded1.BorderColor = Color.White;
             panelAdvancedRounded1.BottomLeftRadius = 0;
-            panelAdvancedRounded1.BottomRightRadius = 200;
+            panelAdvancedRounded1.BottomRightRadius = 50;
             panelAdvancedRounded1.Controls.Add(pictureBox2);
             panelAdvancedRounded1.Controls.Add(linkLabel1);
             panelAdvancedRounded1.Controls.Add(buttonRounded1);
             panelAdvancedRounded1.Controls.Add(label2);
             panelAdvancedRounded1.Controls.Add(label1);
-            panelAdvancedRounded1.Controls.Add(textBoxIconRounded2);
-            panelAdvancedRounded1.Controls.Add(textBoxIconRounded1);
+            panelAdvancedRounded1.Controls.Add(Passwordtxt);
+            panelAdvancedRounded1.Controls.Add(Emailtxt);
             panelAdvancedRounded1.Controls.Add(pictureBox1);
             panelAdvancedRounded1.Controls.Add(label3);
             panelAdvancedRounded1.Controls.Add(label4);
@@ -81,10 +81,11 @@
             // linkLabel1
             // 
             linkLabel1.AutoSize = true;
+            linkLabel1.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             linkLabel1.LinkColor = Color.Firebrick;
-            linkLabel1.Location = new Point(30, 351);
+            linkLabel1.Location = new Point(59, 351);
             linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(96, 15);
+            linkLabel1.Size = new Size(112, 22);
             linkLabel1.TabIndex = 8;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Lupa Kata Sandi?";
@@ -96,21 +97,23 @@
             buttonRounded1.ClickColor = Color.Maroon;
             buttonRounded1.FlatAppearance.BorderSize = 0;
             buttonRounded1.FlatStyle = FlatStyle.Flat;
+            buttonRounded1.Font = new Font("Poppins", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             buttonRounded1.ForeColor = Color.White;
             buttonRounded1.HoverColor = Color.Maroon;
-            buttonRounded1.Location = new Point(30, 400);
+            buttonRounded1.Location = new Point(59, 400);
             buttonRounded1.Name = "buttonRounded1";
             buttonRounded1.Size = new Size(150, 40);
             buttonRounded1.TabIndex = 7;
             buttonRounded1.Text = "Masuk";
             buttonRounded1.UseVisualStyleBackColor = false;
+            buttonRounded1.Click += buttonRounded1_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.FlatStyle = FlatStyle.System;
             label2.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(30, 186);
+            label2.Location = new Point(59, 186);
             label2.Name = "label2";
             label2.Size = new Size(240, 22);
             label2.TabIndex = 4;
@@ -121,7 +124,7 @@
             label1.AutoSize = true;
             label1.FlatStyle = FlatStyle.System;
             label1.Font = new Font("Poppins", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(30, 155);
+            label1.Location = new Point(59, 155);
             label1.Margin = new Padding(0);
             label1.Name = "label1";
             label1.RightToLeft = RightToLeft.No;
@@ -130,33 +133,33 @@
             label1.Text = "Selamat Datang di Portal SSO MyLMS";
             label1.Click += label1_Click;
             // 
-            // textBoxIconRounded2
+            // Passwordtxt
             // 
-            textBoxIconRounded2.BackColor = Color.White;
-            textBoxIconRounded2.BorderFocusColor = Color.Maroon;
-            textBoxIconRounded2.BorderHoverColor = Color.Maroon;
-            textBoxIconRounded2.Cursor = Cursors.IBeam;
-            textBoxIconRounded2.Location = new Point(30, 307);
-            textBoxIconRounded2.Name = "textBoxIconRounded2";
-            textBoxIconRounded2.Padding = new Padding(14, 10, 14, 10);
-            textBoxIconRounded2.PlaceholderText = "Massukan Kata Sandi";
-            textBoxIconRounded2.Size = new Size(300, 36);
-            textBoxIconRounded2.TabIndex = 2;
-            textBoxIconRounded2.TextChanged += textBoxIconRounded2_TextChanged;
+            Passwordtxt.BackColor = Color.White;
+            Passwordtxt.BorderFocusColor = Color.Maroon;
+            Passwordtxt.BorderHoverColor = Color.Maroon;
+            Passwordtxt.Cursor = Cursors.IBeam;
+            Passwordtxt.Location = new Point(59, 307);
+            Passwordtxt.Name = "Passwordtxt";
+            Passwordtxt.Padding = new Padding(14, 10, 14, 10);
+            Passwordtxt.PlaceholderText = "Massukan Kata Sandi";
+            Passwordtxt.Size = new Size(300, 36);
+            Passwordtxt.TabIndex = 2;
+            Passwordtxt.TextChanged += textBoxIconRounded2_TextChanged;
             // 
-            // textBoxIconRounded1
+            // Emailtxt
             // 
-            textBoxIconRounded1.BackColor = Color.White;
-            textBoxIconRounded1.BorderFocusColor = Color.Maroon;
-            textBoxIconRounded1.BorderHoverColor = Color.Maroon;
-            textBoxIconRounded1.Cursor = Cursors.IBeam;
-            textBoxIconRounded1.Location = new Point(30, 249);
-            textBoxIconRounded1.Name = "textBoxIconRounded1";
-            textBoxIconRounded1.Padding = new Padding(14, 10, 14, 10);
-            textBoxIconRounded1.PlaceholderText = "Masukkan Email";
-            textBoxIconRounded1.Size = new Size(300, 36);
-            textBoxIconRounded1.TabIndex = 1;
-            textBoxIconRounded1.TextChanged += textBoxIconRounded1_TextChanged;
+            Emailtxt.BackColor = Color.White;
+            Emailtxt.BorderFocusColor = Color.Maroon;
+            Emailtxt.BorderHoverColor = Color.Maroon;
+            Emailtxt.Cursor = Cursors.IBeam;
+            Emailtxt.Location = new Point(59, 249);
+            Emailtxt.Name = "Emailtxt";
+            Emailtxt.Padding = new Padding(14, 10, 14, 10);
+            Emailtxt.PlaceholderText = "Masukkan Email";
+            Emailtxt.Size = new Size(300, 36);
+            Emailtxt.TabIndex = 1;
+            Emailtxt.TextChanged += textBoxIconRounded1_TextChanged;
             // 
             // pictureBox1
             // 
@@ -174,7 +177,7 @@
             label3.BackColor = Color.Transparent;
             label3.FlatStyle = FlatStyle.Flat;
             label3.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(30, 230);
+            label3.Location = new Point(59, 230);
             label3.Name = "label3";
             label3.Size = new Size(42, 22);
             label3.TabIndex = 5;
@@ -186,7 +189,7 @@
             label4.BackColor = Color.Transparent;
             label4.FlatStyle = FlatStyle.Flat;
             label4.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(30, 288);
+            label4.Location = new Point(59, 288);
             label4.Name = "label4";
             label4.Size = new Size(74, 22);
             label4.TabIndex = 6;
@@ -205,7 +208,7 @@
             MaximumSize = new Size(1278, 713);
             MinimumSize = new Size(1278, 619);
             Name = "LoginForm";
-            Text = "AuthApp";
+            Text = "myLMS";
             Load += LoginForm_Load;
             panelAdvancedRounded1.ResumeLayout(false);
             panelAdvancedRounded1.PerformLayout();
@@ -218,8 +221,8 @@
 
         private Models.PanelAdvancedRounded panelAdvancedRounded1;
         private PictureBox pictureBox1;
-        private Models.TextBoxIconRounded textBoxIconRounded2;
-        private Models.TextBoxIconRounded textBoxIconRounded1;
+        private Models.TextBoxIconRounded Passwordtxt;
+        private Models.TextBoxIconRounded Emailtxt;
         private Label label1;
         private Label label2;
         private Label label3;
