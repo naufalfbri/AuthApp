@@ -113,6 +113,16 @@ namespace Auth.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Simple_Line {
+            get {
+                object obj = ResourceManager.GetObject("Simple_Line", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Telkom_Logo {
             get {
                 object obj = ResourceManager.GetObject("Telkom Logo", resourceCulture);
