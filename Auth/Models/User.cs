@@ -1,18 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
-
-namespace Auth.Models
+﻿namespace Auth.Models
 {
-    public partial class User : Form
+    public class User
     {
-        public User()
-        {
-            InitializeComponent();
-        }
+        public int Id { get; set; }
+        public string Email { get; set; } = string.Empty;
+        public string NamaLengkap { get; set; } = string.Empty;
+        public string Role { get; set; } = string.Empty;
     }
 }

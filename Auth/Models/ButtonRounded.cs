@@ -4,42 +4,37 @@ using System.Diagnostics.CodeAnalysis;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
-using WinFormsTimer = System.Windows.Forms.Timer;
 
 namespace Auth.Models
 {
     [DefaultEvent("Click")]
     public class ButtonRounded : Button
     {
-        private int borderRadius = 15;
+        private int borderRadius = 20;
         private int borderSize = 0;
         private Color borderColor = Color.DodgerBlue;
+        private Color backgroundColor = Color.MediumSlateBlue;
         private Color hoverColor = Color.RoyalBlue;
-        private Color clickColor = Color.Navy;
+        private Color clickColor = Color.DarkBlue;
 
-        // Variabel animasi warna dengan penamaan timer eksplisit
-        private Color currentBackColor;
-        private Color targetBackColor;
-        private readonly WinFormsTimer animationTimer = new WinFormsTimer();
-        private bool enableAnimation = true;
+        private bool isMouseOver = false;
+        private bool isMouseDown = false;
 
         #region Properti Designer
 
         [Category("Appearance")]
-        [Description("Radius kelengkungan sudut tombol.")]
-        [DefaultValue(15)]
+        [DefaultValue(20)]
         public int BorderRadius
         {
             get => borderRadius;
             set
             {
                 borderRadius = Math.Max(0, value);
-                this.Invalidate();
+                UpdateRegionAndRedraw();
             }
         }
 
         [Category("Appearance")]
-        [Description("Ketebalan garis border.")]
         [DefaultValue(0)]
         public int BorderSize
         {
@@ -52,7 +47,6 @@ namespace Auth.Models
         }
 
         [Category("Appearance")]
-        [Description("Warna garis border.")]
         [DefaultValue(typeof(Color), "DodgerBlue")]
         public Color BorderColor
         {
@@ -65,7 +59,18 @@ namespace Auth.Models
         }
 
         [Category("Appearance")]
-        [Description("Warna background saat kursor mengarah ke tombol (hover).")]
+        [DefaultValue(typeof(Color), "MediumSlateBlue")]
+        public Color BackgroundColor
+        {
+            get => backgroundColor;
+            set
+            {
+                backgroundColor = value;
+                this.Invalidate();
+            }
+        }
+
+        [Category("Appearance")]
         [DefaultValue(typeof(Color), "RoyalBlue")]
         public Color HoverColor
         {
@@ -78,8 +83,7 @@ namespace Auth.Models
         }
 
         [Category("Appearance")]
-        [Description("Warna background saat tombol ditekan (click).")]
-        [DefaultValue(typeof(Color), "Navy")]
+        [DefaultValue(typeof(Color), "DarkBlue")]
         public Color ClickColor
         {
             get => clickColor;
@@ -90,27 +94,14 @@ namespace Auth.Models
             }
         }
 
-        [Category("Behavior")]
-        [Description("Menentukan apakah animasi transisi warna aktif.")]
-        [DefaultValue(true)]
-        public bool EnableAnimation
-        {
-            get => enableAnimation;
-            set => enableAnimation = value;
-        }
-
         [Category("Appearance")]
-        public override Color BackColor
+        [DefaultValue(ContentAlignment.MiddleCenter)]
+        public override ContentAlignment TextAlign
         {
-            get => base.BackColor;
+            get => base.TextAlign;
             set
             {
-                base.BackColor = value;
-                if (!animationTimer.Enabled)
-                {
-                    currentBackColor = value;
-                    targetBackColor = value;
-                }
+                base.TextAlign = value;
                 this.Invalidate();
             }
         }
@@ -122,7 +113,7 @@ namespace Auth.Models
             get => base.Text;
             set
             {
-                base.Text = value;
+                base.Text = value ?? string.Empty;
                 this.Invalidate();
             }
         }
@@ -131,173 +122,203 @@ namespace Auth.Models
 
         public ButtonRounded()
         {
+            this.SetStyle(ControlStyles.UserPaint | ControlStyles.AllPaintingInWmPaint | ControlStyles.OptimizedDoubleBuffer, true);
             this.FlatStyle = FlatStyle.Flat;
             this.FlatAppearance.BorderSize = 0;
             this.Size = new Size(150, 40);
-            this.BackColor = Color.DodgerBlue;
+            this.BackColor = Color.Transparent;
             this.ForeColor = Color.White;
-            this.Cursor = Cursors.Hand;
-            this.DoubleBuffered = true;
-
-            currentBackColor = this.BackColor;
-            targetBackColor = this.BackColor;
-
-            // Inisialisasi Timer Animasi (60 FPS / 15ms)
-            animationTimer.Interval = 15;
-            animationTimer.Tick += AnimationTimer_Tick;
         }
 
-        #region Logika Transisi & Animasi
+        #region Event Handlers
 
-        private void StartColorAnimation(Color targetColor)
+        protected override void OnPaddingChanged(EventArgs e)
         {
-            targetBackColor = targetColor;
-
-            if (enableAnimation && !this.DesignMode)
-            {
-                animationTimer.Start();
-            }
-            else
-            {
-                currentBackColor = targetColor;
-                this.Invalidate();
-            }
+            base.OnPaddingChanged(e);
+            this.Invalidate(); // Memastikan redraw otomatis saat Padding diubah
         }
-
-        private void AnimationTimer_Tick(object? sender, EventArgs e)
-        {
-            if (currentBackColor.ToArgb() == targetBackColor.ToArgb())
-            {
-                animationTimer.Stop();
-                return;
-            }
-
-            int r = InterpolateComponent(currentBackColor.R, targetBackColor.R);
-            int g = InterpolateComponent(currentBackColor.G, targetBackColor.G);
-            int b = InterpolateComponent(currentBackColor.B, targetBackColor.B);
-            int a = InterpolateComponent(currentBackColor.A, targetBackColor.A);
-
-            currentBackColor = Color.FromArgb(a, r, g, b);
-            this.Invalidate();
-        }
-
-        private int InterpolateComponent(int current, int target)
-        {
-            if (current == target) return target;
-            int diff = target - current;
-            int step = Math.Sign(diff) * Math.Max(1, Math.Abs(diff) / 3);
-            int next = current + step;
-
-            return (diff > 0 && next > target) || (diff < 0 && next < target) ? target : next;
-        }
-
-        #endregion
-
-        #region Event Mouse State
 
         protected override void OnMouseEnter(EventArgs e)
         {
             base.OnMouseEnter(e);
-            StartColorAnimation(HoverColor);
+            isMouseOver = true;
+            this.Invalidate();
         }
 
         protected override void OnMouseLeave(EventArgs e)
         {
             base.OnMouseLeave(e);
-            StartColorAnimation(this.BackColor);
+            isMouseOver = false;
+            isMouseDown = false;
+            this.Invalidate();
         }
 
-        protected override void OnMouseDown(MouseEventArgs mevent)
+        protected override void OnMouseDown(MouseEventArgs e)
         {
-            base.OnMouseDown(mevent);
-            StartColorAnimation(ClickColor);
+            base.OnMouseDown(e);
+            if (e.Button == MouseButtons.Left)
+            {
+                isMouseDown = true;
+                this.Invalidate();
+            }
         }
 
-        protected override void OnMouseUp(MouseEventArgs mevent)
+        protected override void OnMouseUp(MouseEventArgs e)
         {
-            base.OnMouseUp(mevent);
-            if (ClientRectangle.Contains(PointToClient(Cursor.Position)))
-                StartColorAnimation(HoverColor);
-            else
-                StartColorAnimation(this.BackColor);
+            base.OnMouseUp(e);
+            if (e.Button == MouseButtons.Left)
+            {
+                isMouseDown = false;
+                this.Invalidate();
+            }
         }
 
         #endregion
 
-        protected override void OnPaintBackground(PaintEventArgs pevent)
+        #region Drawing & Clipping Logic
+
+        protected override void OnResize(EventArgs e)
         {
-            // Mengosongkan pemrosesan background default untuk mencegah flicker
+            base.OnResize(e);
+            UpdateRegionAndRedraw();
         }
 
-        protected override void OnPaint(PaintEventArgs pevent)
+        private void UpdateRegionAndRedraw()
         {
-            Graphics g = pevent.Graphics;
-
-            g.SmoothingMode = SmoothingMode.AntiAlias;
-            g.PixelOffsetMode = PixelOffsetMode.HighQuality;
-
-            if (this.Parent != null)
-            {
-                using (var brushParentBg = new SolidBrush(this.Parent.BackColor))
-                {
-                    g.FillRectangle(brushParentBg, this.ClientRectangle);
-                }
-            }
-
-            float penThickness = BorderSize > 0 ? BorderSize : 1f;
-            float margin = penThickness / 2f + 0.5f;
-
-            RectangleF rectSurface = new RectangleF(
-                margin,
-                margin,
-                this.Width - (margin * 2f),
-                this.Height - (margin * 2f)
-            );
-
-            if (rectSurface.Width <= 0 || rectSurface.Height <= 0) return;
+            if (this.Width <= 0 || this.Height <= 0) return;
 
             if (BorderRadius > 0)
             {
-                using (GraphicsPath pathSurface = GetRoundedPath(rectSurface, BorderRadius))
-                using (SolidBrush brushFill = new SolidBrush(currentBackColor))
+                using (GraphicsPath path = GetRoundedPath(new RectangleF(0, 0, this.Width, this.Height), BorderRadius))
                 {
-                    g.FillPath(brushFill, pathSurface);
+                    this.Region = new Region(path);
+                }
+            }
+            else
+            {
+                this.Region = null;
+            }
+            this.Invalidate();
+        }
 
-                    if (BorderSize > 0)
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+
+            Graphics g = e.Graphics;
+            g.SmoothingMode = SmoothingMode.AntiAlias;
+
+            Color currentBg = backgroundColor;
+            if (isMouseDown) currentBg = clickColor;
+            else if (isMouseOver) currentBg = hoverColor;
+
+            RectangleF rectSurface = new RectangleF(0, 0, this.Width, this.Height);
+
+            // 1. Gambar Background Tombol
+            if (BorderRadius > 0)
+            {
+                using (GraphicsPath pathSurface = GetRoundedPath(rectSurface, BorderRadius))
+                using (SolidBrush brushBg = new SolidBrush(currentBg))
+                {
+                    g.FillPath(brushBg, pathSurface);
+                }
+
+                if (BorderSize > 0)
+                {
+                    float margin = BorderSize / 2f;
+                    RectangleF rectBorder = new RectangleF(margin, margin, this.Width - BorderSize, this.Height - BorderSize);
+                    using (GraphicsPath pathBorder = GetRoundedPath(rectBorder, BorderRadius))
+                    using (Pen penBorder = new Pen(BorderColor, BorderSize))
                     {
-                        using (Pen penBorder = new Pen(BorderColor, BorderSize))
-                        {
-                            penBorder.Alignment = PenAlignment.Center;
-                            g.DrawPath(penBorder, pathSurface);
-                        }
+                        penBorder.Alignment = PenAlignment.Center;
+                        g.DrawPath(penBorder, pathBorder);
                     }
                 }
             }
             else
             {
-                using (SolidBrush brushFill = new SolidBrush(currentBackColor))
+                using (SolidBrush brushBg = new SolidBrush(currentBg))
                 {
-                    g.FillRectangle(brushFill, rectSurface);
+                    g.FillRectangle(brushBg, rectSurface);
                 }
 
                 if (BorderSize > 0)
                 {
+                    float margin = BorderSize / 2f;
+                    RectangleF rectBorder = new RectangleF(margin, margin, this.Width - BorderSize, this.Height - BorderSize);
                     using (Pen penBorder = new Pen(BorderColor, BorderSize))
                     {
-                        penBorder.Alignment = PenAlignment.Center;
-                        g.DrawRectangle(penBorder, rectSurface.X, rectSurface.Y, rectSurface.Width, rectSurface.Height);
+                        g.DrawRectangle(penBorder, rectBorder.X, rectBorder.Y, rectBorder.Width, rectBorder.Height);
                     }
                 }
             }
 
-            TextRenderer.DrawText(
-                g,
-                this.Text,
-                this.Font,
-                this.ClientRectangle,
-                this.ForeColor,
-                TextFormatFlags.HorizontalCenter | TextFormatFlags.VerticalCenter | TextFormatFlags.WordBreak
-            );
+            // 2. Gambar Teks Tombol (Memperhitungkan Nilai Padding)
+            if (!string.IsNullOrEmpty(this.Text))
+            {
+                float textX = this.Padding.Left;
+                float textY = this.Padding.Top;
+                float textWidth = Math.Max(0, this.Width - this.Padding.Horizontal);
+                float textHeight = Math.Max(0, this.Height - this.Padding.Vertical);
+
+                RectangleF rectText = new RectangleF(textX, textY, textWidth, textHeight);
+
+                using (StringFormat sf = GetStringFormat(this.TextAlign))
+                using (SolidBrush textBrush = new SolidBrush(this.ForeColor))
+                {
+                    g.DrawString(this.Text, this.Font, textBrush, rectText, sf);
+                }
+            }
+        }
+
+        private StringFormat GetStringFormat(ContentAlignment alignment)
+        {
+            StringFormat sf = new StringFormat
+            {
+                HotkeyPrefix = System.Drawing.Text.HotkeyPrefix.Show
+            };
+
+            switch (alignment)
+            {
+                case ContentAlignment.TopLeft:
+                    sf.Alignment = StringAlignment.Near;
+                    sf.LineAlignment = StringAlignment.Near;
+                    break;
+                case ContentAlignment.TopCenter:
+                    sf.Alignment = StringAlignment.Center;
+                    sf.LineAlignment = StringAlignment.Near;
+                    break;
+                case ContentAlignment.TopRight:
+                    sf.Alignment = StringAlignment.Far;
+                    sf.LineAlignment = StringAlignment.Near;
+                    break;
+                case ContentAlignment.MiddleLeft:
+                    sf.Alignment = StringAlignment.Near;
+                    sf.LineAlignment = StringAlignment.Center;
+                    break;
+                case ContentAlignment.MiddleCenter:
+                    sf.Alignment = StringAlignment.Center;
+                    sf.LineAlignment = StringAlignment.Center;
+                    break;
+                case ContentAlignment.MiddleRight:
+                    sf.Alignment = StringAlignment.Far;
+                    sf.LineAlignment = StringAlignment.Center;
+                    break;
+                case ContentAlignment.BottomLeft:
+                    sf.Alignment = StringAlignment.Near;
+                    sf.LineAlignment = StringAlignment.Far;
+                    break;
+                case ContentAlignment.BottomCenter:
+                    sf.Alignment = StringAlignment.Center;
+                    sf.LineAlignment = StringAlignment.Far;
+                    break;
+                case ContentAlignment.BottomRight:
+                    sf.Alignment = StringAlignment.Far;
+                    sf.LineAlignment = StringAlignment.Far;
+                    break;
+            }
+
+            return sf;
         }
 
         private GraphicsPath GetRoundedPath(RectangleF rect, float radius)
@@ -315,20 +336,6 @@ namespace Auth.Models
             return path;
         }
 
-        protected override void OnResize(EventArgs e)
-        {
-            base.OnResize(e);
-            this.Invalidate();
-        }
-
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                animationTimer.Stop();
-                animationTimer.Dispose();
-            }
-            base.Dispose(disposing);
-        }
+        #endregion
     }
 }

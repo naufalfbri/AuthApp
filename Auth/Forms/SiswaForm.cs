@@ -44,5 +44,10 @@ namespace Auth.Forms
         {
 
         }
+
+        private void panelRounded1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
