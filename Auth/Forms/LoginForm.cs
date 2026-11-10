@@ -5,6 +5,8 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using Auth.Services;
+using Auth.Models;
 
 namespace Auth.Forms
 {
@@ -44,6 +46,19 @@ namespace Auth.Forms
                 MessageBox.Show("Email dan Kata Sandi tidak boleh kosong!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            
+            AuthService authService = new AuthService();
+            User? user = authService.AuthenticateUser(email, password);
+
+            if (user != null)
+            {
+                MessageBox.Show("Login berhasil!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Email atau Kata Sandi salah!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
         }
     }
 }

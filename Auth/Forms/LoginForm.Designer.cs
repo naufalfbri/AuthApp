@@ -93,6 +93,7 @@
             // buttonRounded1
             // 
             buttonRounded1.BackColor = Color.Firebrick;
+            buttonRounded1.BackgroundColor = Color.Firebrick;
             buttonRounded1.BorderColor = Color.Transparent;
             buttonRounded1.ClickColor = Color.Maroon;
             buttonRounded1.FlatAppearance.BorderSize = 0;
@@ -142,9 +143,11 @@
             Passwordtxt.Location = new Point(59, 307);
             Passwordtxt.Name = "Passwordtxt";
             Passwordtxt.Padding = new Padding(14, 10, 14, 10);
+            Passwordtxt.PasswordChar = '●';
             Passwordtxt.PlaceholderText = "Massukan Kata Sandi";
             Passwordtxt.Size = new Size(300, 36);
             Passwordtxt.TabIndex = 2;
+            Passwordtxt.UseSystemPasswordChar = true;
             Passwordtxt.TextChanged += textBoxIconRounded2_TextChanged;
             // 
             // Emailtxt
