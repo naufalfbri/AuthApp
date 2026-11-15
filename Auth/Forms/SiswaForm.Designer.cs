@@ -38,200 +38,139 @@ namespace Auth.Forms
             buttonRounded5 = new Auth.Components.ButtonRounded();
             panelRounded2 = new Auth.Components.PanelRounded();
             pictureBox3 = new PictureBox();
+            panelRounded1 = new Auth.Models.PanelRounded();
+            label2 = new Label();
+            label3 = new Label();
             pictureBox2 = new PictureBox();
             textBoxIconRounded1 = new Auth.Components.TextBoxIconRounded();
             label1 = new Label();
             panelRounded1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panelRounded2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            panelRounded1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
-            // 
-            // buttonRounded1
-            // 
-            buttonRounded1.BackColor = Color.Firebrick;
-            buttonRounded1.BackgroundColor = Color.Firebrick;
-            buttonRounded1.BorderColor = Color.Maroon;
-            buttonRounded1.ClickColor = Color.Maroon;
-            buttonRounded1.FlatAppearance.BorderSize = 0;
-            buttonRounded1.FlatStyle = FlatStyle.Flat;
-            buttonRounded1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            buttonRounded1.ForeColor = Color.White;
-            buttonRounded1.HoverColor = Color.Maroon;
-            buttonRounded1.ImageAlign = ContentAlignment.MiddleLeft;
-            buttonRounded1.Location = new Point(6, 83);
-            buttonRounded1.Margin = new Padding(0);
-            buttonRounded1.Name = "buttonRounded1";
-            buttonRounded1.Padding = new Padding(20, 0, 0, 0);
-            buttonRounded1.Size = new Size(200, 36);
-            buttonRounded1.TabIndex = 0;
-            buttonRounded1.Text = "Dashboard";
-            buttonRounded1.TextAlign = ContentAlignment.MiddleLeft;
-            buttonRounded1.TextImageRelation = TextImageRelation.ImageBeforeText;
-            buttonRounded1.UseMnemonic = false;
-            buttonRounded1.UseVisualStyleBackColor = false;
-            buttonRounded1.Click += buttonRounded1_Click;
-            // 
-            // panelRounded1
-            // 
-            panelRounded1.BackColor = Color.White;
-            panelRounded1.BorderColor = Color.White;
-            panelRounded1.Controls.Add(buttonRounded7);
-            panelRounded1.Controls.Add(pictureBox1);
-            panelRounded1.Controls.Add(buttonRounded1);
-            panelRounded1.Controls.Add(buttonRounded6);
-            panelRounded1.Controls.Add(buttonRounded5);
-            panelRounded1.Dock = DockStyle.Left;
-            panelRounded1.Location = new Point(0, 0);
-            panelRounded1.Margin = new Padding(2);
-            panelRounded1.Name = "panelRounded1";
-            panelRounded1.Size = new Size(212, 488);
-            panelRounded1.TabIndex = 1;
-            // 
-            // buttonRounded7
-            // 
-            buttonRounded7.BackColor = Color.White;
-            buttonRounded7.BorderColor = Color.Transparent;
-            buttonRounded7.ClickColor = Color.Silver;
-            buttonRounded7.FlatAppearance.BorderSize = 0;
-            buttonRounded7.FlatStyle = FlatStyle.Flat;
-            buttonRounded7.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            buttonRounded7.ForeColor = Color.Black;
-            buttonRounded7.HoverColor = Color.FromArgb(224, 224, 224);
-            buttonRounded7.Location = new Point(6, 202);
-            buttonRounded7.Margin = new Padding(2);
-            buttonRounded7.Name = "buttonRounded7";
-            buttonRounded7.Size = new Size(200, 36);
-            buttonRounded7.TabIndex = 5;
-            buttonRounded7.Text = "Subject";
-            buttonRounded7.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.images;
-            pictureBox1.Location = new Point(38, 15);
-            pictureBox1.Margin = new Padding(0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(140, 54);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
-            // 
-            // buttonRounded6
-            // 
-            buttonRounded6.BackColor = Color.White;
-            buttonRounded6.BorderColor = Color.Transparent;
-            buttonRounded6.ClickColor = Color.Silver;
-            buttonRounded6.FlatAppearance.BorderSize = 0;
-            buttonRounded6.FlatStyle = FlatStyle.Flat;
-            buttonRounded6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            buttonRounded6.ForeColor = Color.Black;
-            buttonRounded6.HoverColor = Color.FromArgb(224, 224, 224);
-            buttonRounded6.Location = new Point(6, 162);
-            buttonRounded6.Margin = new Padding(2);
-            buttonRounded6.Name = "buttonRounded6";
-            buttonRounded6.Size = new Size(200, 36);
-            buttonRounded6.TabIndex = 4;
-            buttonRounded6.Text = "Calendar";
-            buttonRounded6.UseVisualStyleBackColor = false;
-            // 
-            // buttonRounded5
-            // 
-            buttonRounded5.BackColor = Color.White;
-            buttonRounded5.BorderColor = Color.Transparent;
-            buttonRounded5.ClickColor = Color.Silver;
-            buttonRounded5.FlatAppearance.BorderSize = 0;
-            buttonRounded5.FlatStyle = FlatStyle.Flat;
-            buttonRounded5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            buttonRounded5.ForeColor = Color.Black;
-            buttonRounded5.HoverColor = Color.FromArgb(224, 224, 224);
-            buttonRounded5.Location = new Point(6, 122);
-            buttonRounded5.Margin = new Padding(2);
-            buttonRounded5.Name = "buttonRounded5";
-            buttonRounded5.Size = new Size(200, 36);
-            buttonRounded5.TabIndex = 3;
-            buttonRounded5.Text = "Task";
-            buttonRounded5.UseVisualStyleBackColor = false;
-            buttonRounded5.Click += buttonRounded5_Click;
             // 
             // panelRounded2
             // 
             panelRounded2.BackColor = Color.White;
             panelRounded2.BorderColor = Color.White;
+            panelRounded2.Controls.Add(label1);
+            panelRounded2.Controls.Add(pictureBox1);
             panelRounded2.Controls.Add(pictureBox3);
-            panelRounded2.Controls.Add(pictureBox2);
-            panelRounded2.Controls.Add(textBoxIconRounded1);
-            panelRounded2.Location = new Point(216, 0);
-            panelRounded2.Margin = new Padding(2);
+            panelRounded2.Dock = DockStyle.Top;
+            panelRounded2.Location = new Point(0, 0);
             panelRounded2.Name = "panelRounded2";
-            panelRounded2.Size = new Size(868, 58);
+            panelRounded2.Size = new Size(1549, 93);
             panelRounded2.TabIndex = 2;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Image = Properties.Resources.image_removebg_preview;
-            pictureBox3.Location = new Point(784, 5);
-            pictureBox3.Margin = new Padding(2);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(62, 45);
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.TabIndex = 3;
-            pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = Properties.Resources.bell_icon;
-            pictureBox2.Location = new Point(740, 5);
-            pictureBox2.Margin = new Padding(0);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(42, 46);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 3;
-            pictureBox2.TabStop = false;
-            // 
-            // textBoxIconRounded1
-            // 
-            textBoxIconRounded1.BackColor = Color.White;
-            textBoxIconRounded1.BorderFocusColor = Color.DarkGray;
-            textBoxIconRounded1.BorderHoverColor = Color.Silver;
-            textBoxIconRounded1.Location = new Point(18, 15);
-            textBoxIconRounded1.Margin = new Padding(2);
-            textBoxIconRounded1.Name = "textBoxIconRounded1";
-            textBoxIconRounded1.Padding = new Padding(14, 10, 14, 10);
-            textBoxIconRounded1.PlaceholderText = "Search";
-            textBoxIconRounded1.Size = new Size(315, 36);
-            textBoxIconRounded1.TabIndex = 3;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(554, 184);
-            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(1280, 31);
             label1.Name = "label1";
-            label1.Size = new Size(38, 15);
+            label1.Size = new Size(184, 32);
             label1.TabIndex = 3;
-            label1.Text = "label1";
+            label1.Text = "Vyan Octavyan";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.Telkom_Logo;
+            pictureBox1.Location = new Point(12, 13);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(328, 65);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 4;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = Properties.Resources.image_removebg_preview;
+            pictureBox3.Location = new Point(1471, 13);
+            pictureBox3.Margin = new Padding(4);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(65, 65);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 3;
+            pictureBox3.TabStop = false;
+            // 
+            // panelRounded1
+            // 
+            panelRounded1.BackColor = Color.Firebrick;
+            panelRounded1.Controls.Add(label4);
+            panelRounded1.Controls.Add(pictureBox2);
+            panelRounded1.Controls.Add(label3);
+            panelRounded1.Controls.Add(label2);
+            panelRounded1.Location = new Point(22, 115);
+            panelRounded1.Name = "panelRounded1";
+            panelRounded1.Size = new Size(423, 181);
+            panelRounded1.TabIndex = 3;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(21, 18);
+            label2.Name = "label2";
+            label2.Size = new Size(137, 32);
+            label2.TabIndex = 0;
+            label2.Text = "Nilai Siswa";
+            label2.Click += label2_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(21, 53);
+            label3.Margin = new Padding(0, 3, 0, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(268, 28);
+            label3.TabIndex = 1;
+            label3.Text = "Cek persentase nilai pelajaran";
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.Simple_Line;
+            pictureBox2.Location = new Point(255, 84);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(150, 75);
+            pictureBox2.TabIndex = 4;
+            pictureBox2.TabStop = false;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(35, 101);
+            label4.Name = "label4";
+            label4.Size = new Size(66, 45);
+            label4.TabIndex = 5;
+            label4.Text = "0%";
             // 
             // SiswaForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1084, 488);
-            Controls.Add(label1);
-            Controls.Add(panelRounded2);
+            ClientSize = new Size(1549, 813);
             Controls.Add(panelRounded1);
-            Margin = new Padding(2);
+            Controls.Add(panelRounded2);
             Name = "SiswaForm";
             Text = " ";
             Load += SiswaForm_Load;
-            panelRounded1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panelRounded2.ResumeLayout(false);
+            panelRounded2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            panelRounded1.ResumeLayout(false);
+            panelRounded1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -246,5 +185,11 @@ namespace Auth.Forms
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private Label label1;
+        private PictureBox pictureBox1;
+        private Models.PanelRounded panelRounded1;
+        private Label label2;
+        private Label label3;
+        private PictureBox pictureBox2;
+        private Label label4;
     }
 }
