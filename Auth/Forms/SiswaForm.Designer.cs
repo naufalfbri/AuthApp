@@ -1,4 +1,6 @@
-﻿namespace Auth.Forms
+﻿using Auth.Components;
+
+namespace Auth.Forms
 {
     partial class SiswaForm
     {
@@ -28,16 +30,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            buttonRounded1 = new Auth.Models.ButtonRounded();
-            panelRounded1 = new Auth.Models.PanelRounded();
-            buttonRounded7 = new Auth.Models.ButtonRounded();
+            buttonRounded1 = new Auth.Components.ButtonRounded();
+            panelRounded1 = new Auth.Components.PanelRounded();
+            buttonRounded7 = new Auth.Components.ButtonRounded();
             pictureBox1 = new PictureBox();
-            buttonRounded6 = new Auth.Models.ButtonRounded();
-            buttonRounded5 = new Auth.Models.ButtonRounded();
-            panelRounded2 = new Auth.Models.PanelRounded();
+            buttonRounded6 = new Auth.Components.ButtonRounded();
+            buttonRounded5 = new Auth.Components.ButtonRounded();
+            panelRounded2 = new Auth.Components.PanelRounded();
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
-            textBoxIconRounded1 = new Auth.Models.TextBoxIconRounded();
+            textBoxIconRounded1 = new Auth.Components.TextBoxIconRounded();
             label1 = new Label();
             panelRounded1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -233,14 +235,14 @@
         }
 
         #endregion
-        private Models.ButtonRounded buttonRounded1;
-        private Models.PanelRounded panelRounded1;
+        private ButtonRounded buttonRounded1;
+        private PanelRounded panelRounded1;
         private PictureBox pictureBox1;
-        private Models.PanelRounded panelRounded2;
-        private Models.ButtonRounded buttonRounded5;
-        private Models.ButtonRounded buttonRounded6;
-        private Models.ButtonRounded buttonRounded7;
-        private Models.TextBoxIconRounded textBoxIconRounded1;
+        private PanelRounded panelRounded2;
+        private ButtonRounded buttonRounded5;
+        private ButtonRounded buttonRounded6;
+        private ButtonRounded buttonRounded7;
+        private TextBoxIconRounded textBoxIconRounded1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private Label label1;

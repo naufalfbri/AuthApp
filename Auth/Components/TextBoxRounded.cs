@@ -6,7 +6,7 @@ using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 using WinFormsTimer = System.Windows.Forms.Timer;
 
-namespace Auth.Models
+namespace Auth.Components
 {
     [DefaultEvent("TextChanged")]
     public class TextBoxIconRounded : UserControl
