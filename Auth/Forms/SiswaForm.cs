@@ -49,5 +49,15 @@ namespace Auth.Forms
         {
 
         }
+
+        private void panelRounded3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
