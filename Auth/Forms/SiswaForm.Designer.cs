@@ -1,4 +1,6 @@
-﻿namespace Auth.Forms
+﻿using Auth.Components;
+
+namespace Auth.Forms
 {
     partial class SiswaForm
     {
@@ -28,11 +30,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panelRounded2 = new Auth.Models.PanelRounded();
-            label1 = new Label();
+            buttonRounded1 = new Auth.Components.ButtonRounded();
+            panelRounded1 = new Auth.Components.PanelRounded();
+            buttonRounded7 = new Auth.Components.ButtonRounded();
             pictureBox1 = new PictureBox();
+            buttonRounded6 = new Auth.Components.ButtonRounded();
+            buttonRounded5 = new Auth.Components.ButtonRounded();
+            panelRounded2 = new Auth.Components.PanelRounded();
             pictureBox3 = new PictureBox();
-            panelRounded1 = new Auth.Models.PanelRounded();
             label4 = new Label();
             pictureBox2 = new PictureBox();
             label3 = new Label();
@@ -174,14 +179,18 @@
         }
 
         #endregion
-        private Models.PanelRounded panelRounded2;
+        private ButtonRounded buttonRounded1;
+        private PanelRounded panelRounded1;
+        private PictureBox pictureBox1;
+        private PanelRounded panelRounded2;
+        private ButtonRounded buttonRounded5;
+        private ButtonRounded buttonRounded6;
+        private ButtonRounded buttonRounded7;
+        private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private Label label1;
-        private PictureBox pictureBox1;
-        private Models.PanelRounded panelRounded1;
         private Label label2;
         private Label label3;
-        private PictureBox pictureBox2;
         private Label label4;
     }
 }

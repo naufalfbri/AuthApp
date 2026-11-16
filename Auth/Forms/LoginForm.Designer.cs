@@ -1,4 +1,6 @@
-﻿namespace Auth.Forms
+﻿using Auth.Components;
+
+namespace Auth.Forms
 {
     partial class LoginForm
     {
@@ -29,14 +31,14 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
-            panelAdvancedRounded1 = new Auth.Models.PanelAdvancedRounded();
+            panelAdvancedRounded1 = new Auth.Components.PanelAdvancedRounded();
             pictureBox2 = new PictureBox();
             linkLabel1 = new LinkLabel();
-            buttonRounded1 = new Auth.Models.ButtonRounded();
+            buttonRounded1 = new Auth.Components.ButtonRounded();
             label2 = new Label();
             label1 = new Label();
-            Passwordtxt = new Auth.Models.TextBoxIconRounded();
-            Emailtxt = new Auth.Models.TextBoxIconRounded();
+            Passwordtxt = new Auth.Components.TextBoxIconRounded();
+            Emailtxt = new Auth.Components.TextBoxIconRounded();
             pictureBox1 = new PictureBox();
             label3 = new Label();
             label4 = new Label();
@@ -222,15 +224,15 @@
 
         #endregion
 
-        private Models.PanelAdvancedRounded panelAdvancedRounded1;
+        private PanelAdvancedRounded panelAdvancedRounded1;
         private PictureBox pictureBox1;
-        private Models.TextBoxIconRounded Passwordtxt;
-        private Models.TextBoxIconRounded Emailtxt;
+        private TextBoxIconRounded Passwordtxt;
+        private TextBoxIconRounded Emailtxt;
         private Label label1;
         private Label label2;
         private Label label3;
         private Label label4;
-        private Models.ButtonRounded buttonRounded1;
+        private ButtonRounded buttonRounded1;
         private LinkLabel linkLabel1;
         private PictureBox pictureBox2;
     }
